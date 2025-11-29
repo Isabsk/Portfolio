@@ -1,53 +1,23 @@
 import type { Metadata, Viewport } from "next";
-import localFont from "next/font/local";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { NoiseOverlay } from "@/components/noise-overlay";
 import { CustomCursor } from "@/components/custom-cursor";
 import { LenisProvider } from "@/components/lenis-provider";
 
-// Harmond - Display font
-const harmond = localFont({
-  src: [
-    {
-      path: "../Harmond-Free-For-Personal-Use/Harmond - Free For Personal Use/Harmond-ExtraBoldExpanded.otf",
-      weight: "800",
-      style: "normal",
-    },
-  ],
+// Harmond - Display font (fallback: Playfair Display)
+const harmond = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
   variable: "--font-harmond",
   display: "swap",
   preload: true,
 });
 
-// Nohemi - Body font
-const nohemi = localFont({
-  src: [
-    {
-      path: "../Nohemi/Nohemi/Web-TT/Nohemi-Light.woff",
-      weight: "300",
-      style: "normal",
-    },
-    {
-      path: "../Nohemi/Nohemi/Web-TT/Nohemi-Regular.woff",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../Nohemi/Nohemi/Web-TT/Nohemi-Medium.woff",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "../Nohemi/Nohemi/Web-TT/Nohemi-SemiBold.woff",
-      weight: "600",
-      style: "normal",
-    },
-    {
-      path: "../Nohemi/Nohemi/Web-TT/Nohemi-Bold.woff",
-      weight: "700",
-      style: "normal",
-    },
-  ],
+// Nohemi - Body font (fallback: Inter)
+const nohemi = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
   variable: "--font-nohemi",
   display: "swap",
   preload: true,

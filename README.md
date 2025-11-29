@@ -287,7 +287,20 @@ module.exports = {
 
 ### 3. Fonts
 
-Replace font files in `/Nohemi` and `/Harmond-Free-For-Personal-Use` folders, then update `app/layout.tsx`.
+The project uses Google Fonts as fallbacks. To use custom fonts:
+
+1. Add your font files to `/Nohemi` and `/Harmond-Free-For-Personal-Use` folders
+2. Update `app/layout.tsx` to use `localFont` instead of Google Fonts:
+
+```tsx
+import localFont from "next/font/local";
+
+// Replace Google Font imports with local fonts
+const harmond = localFont({
+  src: "../Harmond-Free-For-Personal-Use/...",
+  // ... font config
+});
+```
 
 ---
 
