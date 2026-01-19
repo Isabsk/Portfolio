@@ -14,23 +14,24 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Creative Developer | Digital Noir Portfolio",
+  title: "Isab Sk | Creative Developer",
   description:
-    "Award-winning creative developer specializing in interactive digital experiences, high-end UI, and 3D web development.",
+    "Creative developer based in India, specializing in high-performance web applications, clean architecture, and immersive digital experiences.",
   keywords: [
+    "Isab Sk",
     "Creative Developer",
     "Web Developer",
-    "UI/UX",
-    "Three.js",
+    "Full Stack",
+    "Java",
     "React",
     "Next.js",
     "Portfolio",
   ],
-  authors: [{ name: "Creative Developer" }],
+  authors: [{ name: "Isab Sk" }],
   openGraph: {
-    title: "Creative Developer | Digital Noir Portfolio",
+    title: "Isab Sk | Creative Developer",
     description:
-      "Award-winning creative developer specializing in interactive digital experiences.",
+      "Creative developer specializing in high-performance web applications and immersive digital experiences.",
     type: "website",
   },
 };
