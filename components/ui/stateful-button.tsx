@@ -34,7 +34,7 @@ export const StatefulButton = ({
     <button
       className={cn(
         "flex min-w-[160px] cursor-pointer items-center justify-center gap-2",
-        "rounded-full px-8 py-4 font-nohemi font-semibold text-lg",
+        "rounded-full px-8 py-4 font-poppins font-semibold text-lg",
         "bg-white text-black",
         "transition-all duration-200",
         "hover:bg-white/90 hover:shadow-lg hover:shadow-white/10",

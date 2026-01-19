@@ -6,120 +6,126 @@ import { Timeline } from "@/components/ui/timeline";
 export function ProcessSection() {
   const timelineData = [
     {
-      title: "01",
-      date: "Discovery",
+      title: "2024",
+      date: "Student",
       content: (
         <div className="space-y-4">
-          <h4 className="font-harmond text-2xl md:text-3xl font-bold text-white">
-            Understanding Your Vision
+          <div className="flex flex-col md:flex-row md:items-center gap-4 mb-2">
+            <a
+              href="https://www.zohoschools.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative w-60 h-16 grayscale opacity-80 grayscale-[0.2] hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+            >
+              <img
+                src="/images/logos/zoho-schools-logo.png"
+                alt="Zoho Schools Logo"
+                className="w-full h-full object-contain border border-white/20 rounded-2xl p-3"
+              />
+            </a>
+          </div>
+          <h4 className="font-poppins text-2xl md:text-3xl font-bold text-white">
+            <a
+              href="https://www.zohoschools.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-accent-blue transition-colors duration-300"
+            >
+              Zoho Schools of Learning
+            </a>
           </h4>
-          <p className="font-nohemi text-base text-white/60 max-w-lg">
-            Every great project starts with deep understanding. I dive into your
-            goals, audience, and requirements to craft a strategic foundation
-            that ensures success.
+          <p className="font-poppins text-base text-white/60 max-w-lg">
+            Immersive learning experience focusing on both the technical and business aspects of software development.
           </p>
-          <ul className="space-y-2 font-nohemi text-sm text-white/50">
+          <ul className="space-y-2 font-poppins text-sm text-white/50">
             <li className="flex items-center gap-2">
               <span className="w-1 h-1 rounded-full bg-accent-blue" />
-              Research & Analysis
+              Java & Backend Development
             </li>
             <li className="flex items-center gap-2">
               <span className="w-1 h-1 rounded-full bg-accent-blue" />
-              Competitive Audit
+              Fullstack Web Technologies
             </li>
             <li className="flex items-center gap-2">
               <span className="w-1 h-1 rounded-full bg-accent-blue" />
-              User Journey Mapping
+              Business & Marketing Fundamentals
             </li>
           </ul>
         </div>
       ),
     },
     {
-      title: "02",
-      date: "Design",
+      title: "2023",
+      date: "Internship",
       content: (
         <div className="space-y-4">
-          <h4 className="font-harmond text-2xl md:text-3xl font-bold text-white">
-            Crafting the Experience
+          <div className="flex flex-col md:flex-row md:items-center gap-4 mb-2">
+            <a
+              href="https://jumpstartcxo.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative w-60 h-16 grayscale-[0.2] opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+            >
+              <img
+                src="/images/logos/jumpstartcxo-logo.png"
+                alt="JumpstartCXO Logo"
+                className="w-full h-full object-contain border border-white/20 rounded-2xl p-2"
+              />
+            </a>
+          </div>
+          <h4 className="font-poppins text-2xl md:text-3xl font-bold text-white">
+            <a
+              href="https://jumpstartcxo.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-accent-blue transition-colors duration-300"
+            >
+              JumpstartCXO Startup
+            </a>
           </h4>
-          <p className="font-nohemi text-base text-white/60 max-w-lg">
-            Using Swiss design principles and modern aesthetics, I create
-            wireframes and high-fidelity designs that balance beauty with
-            functionality.
+          <p className="font-poppins text-base text-white/60 max-w-lg">
+            Worked closely with the founding team to design and develop digital presence for various ventures.
           </p>
-          <ul className="space-y-2 font-nohemi text-sm text-white/50">
+          <ul className="space-y-2 font-poppins text-sm text-white/50">
             <li className="flex items-center gap-2">
               <span className="w-1 h-1 rounded-full bg-accent-blue" />
-              Wireframing & Prototyping
+              WordPress Development
             </li>
             <li className="flex items-center gap-2">
               <span className="w-1 h-1 rounded-full bg-accent-blue" />
-              Visual Design System
+              Web Design & UI/UX
             </li>
             <li className="flex items-center gap-2">
               <span className="w-1 h-1 rounded-full bg-accent-blue" />
-              Motion Design
+              SEO Strategy & Implementation
             </li>
           </ul>
         </div>
       ),
     },
     {
-      title: "03",
-      date: "Development",
+      title: "2022",
+      date: "Freelancer",
       content: (
         <div className="space-y-4">
-          <h4 className="font-harmond text-2xl md:text-3xl font-bold text-white">
-            Building with Precision
+          <h4 className="font-poppins text-2xl md:text-3xl font-bold text-white">
+            Freelance Developer
           </h4>
-          <p className="font-nohemi text-base text-white/60 max-w-lg">
-            Clean, performant code is the backbone of every project. I use
-            modern frameworks and best practices to build experiences that are
-            fast, accessible, and scalable.
+          <p className="font-poppins text-base text-white/60 max-w-lg">
+            Began my professional journey by delivering custom web solutions for diverse clients.
           </p>
-          <ul className="space-y-2 font-nohemi text-sm text-white/50">
+          <ul className="space-y-2 font-poppins text-sm text-white/50">
             <li className="flex items-center gap-2">
               <span className="w-1 h-1 rounded-full bg-accent-blue" />
-              React & Next.js Development
+              Frontend Development
             </li>
             <li className="flex items-center gap-2">
               <span className="w-1 h-1 rounded-full bg-accent-blue" />
-              Three.js & WebGL Integration
+              Web Development
             </li>
             <li className="flex items-center gap-2">
               <span className="w-1 h-1 rounded-full bg-accent-blue" />
-              Performance Optimization
-            </li>
-          </ul>
-        </div>
-      ),
-    },
-    {
-      title: "04",
-      date: "Launch",
-      content: (
-        <div className="space-y-4">
-          <h4 className="font-harmond text-2xl md:text-3xl font-bold text-white">
-            Delivering Excellence
-          </h4>
-          <p className="font-nohemi text-base text-white/60 max-w-lg">
-            A successful launch is just the beginning. I ensure smooth
-            deployment, comprehensive testing, and ongoing support to keep your
-            project running flawlessly.
-          </p>
-          <ul className="space-y-2 font-nohemi text-sm text-white/50">
-            <li className="flex items-center gap-2">
-              <span className="w-1 h-1 rounded-full bg-accent-blue" />
-              Quality Assurance
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="w-1 h-1 rounded-full bg-accent-blue" />
-              Deployment & CI/CD
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="w-1 h-1 rounded-full bg-accent-blue" />
-              Ongoing Maintenance
+              Responsive Web Design
             </li>
           </ul>
         </div>
@@ -130,7 +136,7 @@ export function ProcessSection() {
   return (
     <section
       id="process"
-      className="relative min-h-screen w-full py-32 md:py-48 bg-black"
+      className="relative min-h-screen w-full bg-black"
     >
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-accent-blue/[0.02] to-transparent" />
@@ -139,15 +145,14 @@ export function ProcessSection() {
         {/* Section header */}
         <div className="mb-16 md:mb-24 max-w-7xl mx-auto px-4 md:px-8 lg:px-10">
           <div>
-            <span className="font-nohemi text-xs font-medium uppercase tracking-[0.3em] text-white/40 block mb-4">
-              How I Work
+            <span className="font-poppins text-xs font-medium uppercase tracking-[0.3em] text-white/40 block mb-4">
+              My Journey
             </span>
-            <h2 className="font-harmond text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6">
-              Process
+            <h2 className="font-poppins text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6">
+              Experience
             </h2>
-            <p className="font-nohemi text-lg text-white/50 max-w-xl">
-              A refined methodology that ensures every project is delivered with
-              the highest quality and attention to detail.
+            <p className="font-poppins text-lg text-white/50 max-w-xl">
+              A timeline of my professional growth, from freelance development to specialized internships and advanced studies.
             </p>
           </div>
         </div>

@@ -89,14 +89,14 @@ export const KineticMarquee = memo(function KineticMarquee({
           willChange: "transform",
         }}
       >
-        <span className="font-harmond text-[8vw] md:text-[6vw] lg:text-[5vw] font-bold tracking-tight text-transparent uppercase"
+        <span className="font-poppins text-[8vw] md:text-[6vw] lg:text-[5vw] font-bold tracking-tight text-transparent uppercase"
           style={{
             WebkitTextStroke: "1.5px rgba(255,255,255,0.35)",
           }}
         >
           {repeatedText}
         </span>
-        <span className="font-harmond text-[8vw] md:text-[6vw] lg:text-[5vw] font-bold tracking-tight text-transparent uppercase"
+        <span className="font-poppins text-[8vw] md:text-[6vw] lg:text-[5vw] font-bold tracking-tight text-transparent uppercase"
           style={{
             WebkitTextStroke: "1.5px rgba(255,255,255,0.35)",
           }}

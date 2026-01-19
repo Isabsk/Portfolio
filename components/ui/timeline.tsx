@@ -26,7 +26,7 @@ const TimelineItem = memo(function TimelineItem({
         </div>
         
         {/* Title */}
-        <h3 className="hidden md:block text-xl md:pl-20 md:text-4xl font-harmond font-bold text-white/40">
+        <h3 className="hidden md:block text-xl md:pl-20 md:text-4xl font-poppins font-bold text-white/60">
           {item.title}
         </h3>
       </div>
@@ -34,13 +34,13 @@ const TimelineItem = memo(function TimelineItem({
       {/* Content */}
       <div className="relative pl-20 pr-4 md:pl-4 w-full">
         {/* Mobile title */}
-        <h3 className="md:hidden block text-2xl mb-4 text-left font-harmond font-bold text-white/40">
+        <h3 className="md:hidden block text-2xl mb-4 text-left font-poppins font-bold text-white/40">
           {item.title}
         </h3>
         
         {/* Date badge */}
         {item.date && (
-          <span className="inline-block px-3 py-1 mb-4 text-xs font-nohemi font-medium uppercase tracking-widest text-white/60 border border-white/10 rounded-full">
+          <span className="inline-block px-3 py-1 mb-4 text-xs font-poppins font-medium uppercase tracking-widest text-white/60 border border-white/10 rounded-full">
             {item.date}
           </span>
         )}
@@ -89,7 +89,7 @@ export const Timeline = memo(function Timeline({ data }: { data: TimelineEntry[]
   }, [height]);
 
   return (
-    <div className="w-full bg-black font-nohemi" ref={containerRef}>
+    <div className="w-full bg-black font-poppins" ref={containerRef}>
       <div ref={ref} className="relative max-w-6xl mx-auto pb-20">
         {data.map((item, index) => (
           <TimelineItem key={index} item={item} index={index} />

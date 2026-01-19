@@ -56,7 +56,7 @@ const Card = memo(function Card({
       onMouseLeave={() => setHovered(null)}
       className={cn(
         "rounded-2xl relative overflow-hidden h-80 md:h-[480px] w-full",
-        "bg-black-50 border border-white/5",
+        "bg-black-50 border border-white/20",
         "transition-all duration-300 ease-out",
         hovered !== null && hovered !== index && "blur-sm scale-[0.98] opacity-50"
       )}
@@ -64,7 +64,7 @@ const Card = memo(function Card({
     >
       {/* SVG Filter for distortion */}
       <DistortionFilter id={filterId.current} />
-      
+
       {/* Glowing border gradient effect */}
       <GlowingEffect
         spread={40}
@@ -103,13 +103,13 @@ const Card = memo(function Card({
       >
         {/* Category */}
         {card.category && (
-          <span className="text-xs font-nohemi font-medium uppercase tracking-widest text-white/60 mb-2">
+          <span className="text-xs font-poppins font-medium uppercase tracking-widest text-white/60 mb-2">
             {card.category}
           </span>
         )}
 
         {/* Title */}
-        <h3 className="text-2xl md:text-3xl font-harmond font-bold text-white mb-2">
+        <h3 className="text-2xl md:text-3xl font-poppins font-bold text-white mb-2">
           {card.title}
         </h3>
 
@@ -117,7 +117,7 @@ const Card = memo(function Card({
         {card.description && (
           <p
             className={cn(
-              "text-sm font-nohemi text-white/70 max-w-md transition-opacity duration-200",
+              "text-sm font-poppins text-white/70 max-w-md transition-opacity duration-200",
               hovered === index ? "opacity-100" : "opacity-0"
             )}
           >
@@ -130,7 +130,7 @@ const Card = memo(function Card({
           <a
             href={card.link}
             className={cn(
-              "mt-4 inline-flex items-center gap-2 text-sm font-nohemi font-medium text-white",
+              "mt-4 inline-flex items-center gap-2 text-sm font-poppins font-medium text-white",
               "transition-all duration-200",
               hovered === index ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-2"
             )}
@@ -177,7 +177,7 @@ export function FocusCards({ cards }: { cards: CardType[] }) {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+    <div className="grid grid-cols-1 gap-12 w-full max-w-5xl mx-auto">
       {cards.map((card, index) => (
         <Card
           key={card.title}

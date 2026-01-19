@@ -146,8 +146,8 @@ const CornerBrackets = memo(function CornerBrackets() {
 export function HeroSection() {
   const words = [
     "Digital Experiences",
-    "Interactive Worlds", 
-    "High-End UI",
+    "Scalable Systems", 
+    "High-End UI & UX",
     "Web Applications",
   ];
 
@@ -190,19 +190,19 @@ export function HeroSection() {
         >
           {/* Subtitle */}
           <p
-            className="font-nohemi text-sm md:text-base font-medium uppercase tracking-[0.3em] text-white/50 mb-6"
+            className="font-poppins text-sm md:text-base font-medium uppercase tracking-[0.3em] text-white/50 mb-6"
             style={{
               opacity: mounted ? 1 : 0,
               transform: mounted ? 'translateY(0)' : 'translateY(20px)',
               transition: 'opacity 0.6s ease-out 0.2s, transform 0.6s ease-out 0.2s',
             }}
           >
-            Creative Developer
+            Full Stack Developer
           </p>
 
           {/* Main headline */}
           <h1
-            className="font-harmond text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] font-bold tracking-tight leading-[0.85] text-white"
+            className="font-poppins text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] font-bold tracking-tight leading-[0.85] text-white"
             style={{
               opacity: mounted ? 1 : 0,
               transform: mounted ? 'translateY(0)' : 'translateY(30px)',
@@ -210,7 +210,7 @@ export function HeroSection() {
               textShadow: '0 0 80px rgba(255,255,255,0.1)',
             }}
           >
-            CRAFTING
+            Isab Sk
           </h1>
 
           {/* Flip words line */}
@@ -222,12 +222,12 @@ export function HeroSection() {
               transition: 'opacity 0.8s ease-out 0.5s, transform 0.8s ease-out 0.5s',
             }}
           >
-            <span className="font-nohemi text-xl md:text-3xl lg:text-4xl text-white/70">
+            <span className="font-poppins text-xl md:text-3xl lg:text-4xl text-white/70">
               I build
             </span>
             <FlipWords
               words={words}
-              className="font-nohemi text-xl md:text-3xl lg:text-4xl font-semibold"
+              className="font-poppins text-xl md:text-3xl lg:text-4xl font-semibold"
               duration={3000}
             />
           </div>

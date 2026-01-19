@@ -37,14 +37,21 @@ const GlowText = memo(function GlowText({
 
 export function AboutSection() {
   const skills = [
-    "React",
-    "Next.js",
-    "TypeScript",
-    "Three.js",
-    "WebGL",
-    "Framer Motion",
-    "Node.js",
+    "Java",
+    "Servlet & JSP",
+    "Jersey Framework",
+    "MySQL",
+    "Apache Tomcat",
+    "System Designing",
+    "REST API Design",
+    "JWT + OAuth",
+    "HTML",
+    "CSS",
+    "JavaScript",
     "Tailwind CSS",
+    "ReactJS",
+    "Git",
+    "SEO"
   ];
 
   return (
@@ -59,7 +66,7 @@ export function AboutSection() {
         <div className="swiss-grid">
           {/* Section label */}
           <div className="col-span-4 md:col-span-2 lg:col-span-3 mb-12 md:mb-0">
-            <span className="font-nohemi text-xs font-medium uppercase tracking-[0.3em] text-white/40">
+            <span className="font-poppins text-xs font-medium uppercase tracking-[0.3em] text-white/40">
               About
             </span>
             <div className="mt-4 w-12 h-px bg-white/20" />
@@ -68,7 +75,7 @@ export function AboutSection() {
           {/* Main content */}
           <div className="col-span-4 md:col-span-6 lg:col-span-9">
             {/* Encrypted header */}
-            <h2 className="font-harmond text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white mb-8">
+            <h2 className="font-poppins text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white mb-8">
               <EncryptedText
                 text="The Creative Mind"
                 encryptedClassName="text-white/30"
@@ -78,26 +85,29 @@ export function AboutSection() {
             </h2>
 
             {/* Bio paragraphs */}
-            <div className="space-y-6 font-nohemi text-lg md:text-xl leading-relaxed text-white/60 max-w-3xl">
+            <div className="space-y-6 font-poppins text-lg md:text-xl leading-relaxed text-white/60 max-w-3xl">
               <p>
-                I&apos;m a creative developer passionate about building{" "}
+                I&apos;m a developer focused on building{" "}
                 <GlowText className="text-white">
-                  exceptional digital experiences
+                  well-engineered web applications
                 </GlowText>{" "}
-                that push the boundaries of what&apos;s possible on the web.
+                with an emphasis on clarity, performance, and long-term maintainability.
               </p>
 
               <p>
                 My approach combines{" "}
-                <GlowText className="text-white">Swiss design principles</GlowText>{" "}
-                with cutting-edge technology to create work that&apos;s both
-                beautiful and performant.
+                <GlowText className="text-white">structured design principles</GlowText>{" "}
+                with clean architecture and performance-first thinking to build software that scales reliably.
+              </p>
+
+              <p>
+                I continuously improve by building, refining, and learning from systems in production.
               </p>
             </div>
 
             {/* Skills grid */}
             <div className="mt-16">
-              <h3 className="font-nohemi text-xs font-medium uppercase tracking-[0.3em] text-white/40 mb-6">
+              <h3 className="font-poppins text-xs font-medium uppercase tracking-[0.3em] text-white/40 mb-6">
                 Technologies
               </h3>
               <div className="flex flex-wrap gap-3">
@@ -106,7 +116,7 @@ export function AboutSection() {
                     key={skill}
                     className={cn(
                       "px-4 py-2 rounded-full border border-white/10 bg-white/5",
-                      "font-nohemi text-sm text-white/70",
+                      "font-poppins text-sm text-white/70",
                       "hover:border-white/30 hover:bg-white/10 hover:text-white",
                       "transition-all duration-300"
                     )}
@@ -121,16 +131,15 @@ export function AboutSection() {
             {/* Stats */}
             <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
               {[
-                { value: "5+", label: "Years Experience" },
-                { value: "50+", label: "Projects Completed" },
-                { value: "30+", label: "Happy Clients" },
-                { value: "∞", label: "Cups of Coffee" },
+                { value: "10+", label: "Technologies Used" },
+                { value: "15+", label: "Projects Completed" },
+                { value: "∞", label: "Learning Hours" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center md:text-left">
-                  <div className="font-harmond text-4xl md:text-5xl font-bold text-white">
+                  <div className="font-poppins text-4xl md:text-5xl font-bold text-white">
                     {stat.value}
                   </div>
-                  <div className="font-nohemi text-xs uppercase tracking-widest text-white/40 mt-2">
+                  <div className="font-poppins text-xs uppercase tracking-widest text-white/40 mt-2">
                     {stat.label}
                   </div>
                 </div>

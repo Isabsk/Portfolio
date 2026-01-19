@@ -1,24 +1,14 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { NoiseOverlay } from "@/components/noise-overlay";
 import { CustomCursor } from "@/components/custom-cursor";
 import { LenisProvider } from "@/components/lenis-provider";
 
-// Harmond - Display font (fallback: Playfair Display)
-const harmond = Playfair_Display({
+const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
-  variable: "--font-harmond",
-  display: "swap",
-  preload: true,
-});
-
-// Nohemi - Body font (fallback: Inter)
-const nohemi = Inter({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-nohemi",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-poppins",
   display: "swap",
   preload: true,
 });
@@ -59,17 +49,17 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${harmond.variable} ${nohemi.variable} dark`}
+      className={`${poppins.variable} dark`}
       suppressHydrationWarning
     >
-      <body className="bg-black text-white font-nohemi antialiased overflow-x-hidden">
+      <body className="bg-black text-white font-poppins antialiased overflow-x-hidden">
         <LenisProvider>
           {/* Noise overlay - Film grain effect */}
           <NoiseOverlay />
-          
+
           {/* Custom cursor - Desktop only */}
           <CustomCursor />
-          
+
           {/* Main content */}
           <main>{children}</main>
         </LenisProvider>

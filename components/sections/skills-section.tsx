@@ -5,10 +5,10 @@ import { cn } from "@/lib/utils";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
 import {
   IconCode,
-  IconPalette,
+  IconGitBranch,
   IconDeviceLaptop,
   IconRocket,
-  IconBrandThreejs,
+  IconDatabase,
   IconApiApp,
 } from "@tabler/icons-react";
 
@@ -38,7 +38,7 @@ const SkillCard = memo(function SkillCard({
           inactiveZone={0.01}
           borderWidth={2}
         />
-        
+
         <div
           className={cn(
             "relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-8",
@@ -53,10 +53,10 @@ const SkillCard = memo(function SkillCard({
 
             {/* Content */}
             <div className="space-y-3">
-              <h3 className="font-harmond text-xl md:text-2xl font-bold text-white">
+              <h3 className="font-poppins text-xl md:text-2xl font-bold text-white">
                 {title}
               </h3>
-              <p className="font-nohemi text-sm md:text-base text-white/50">
+              <p className="font-poppins text-sm md:text-base text-white/50">
                 {description}
               </p>
             </div>
@@ -72,62 +72,63 @@ export function SkillsSection() {
     {
       area: "md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]",
       icon: <IconCode className="h-6 w-6 text-accent-blue" />,
-      title: "Frontend Development",
+      title: "Java Backend Development",
       description:
-        "Building performant, accessible web applications with React, Next.js, and TypeScript.",
+        "Building robust backend systems using Java, Servlets, JSP, JDBC, and Apache Tomcat.",
     },
     {
       area: "md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]",
-      icon: <IconPalette className="h-6 w-6 text-accent-blue" />,
-      title: "UI/UX Design",
+      icon: <IconApiApp className="h-6 w-6 text-accent-blue" />,
+      title: "REST API Design",
       description:
-        "Creating intuitive interfaces with a focus on user experience and modern aesthetics.",
+        "Designing and implementing REST APIs with proper HTTP methods, status codes, and clean data contracts.",
     },
     {
       area: "md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]",
-      icon: <IconBrandThreejs className="h-6 w-6 text-accent-blue" />,
-      title: "3D & WebGL",
+      icon: <IconDatabase className="h-6 w-6 text-accent-blue" />,
+      title: "Database & Persistence",
       description:
-        "Crafting immersive 3D experiences with Three.js, React Three Fiber, and custom shaders.",
+        "Working with MySQL and MongoDB, handling data modeling, queries, and persistence using JDBC.",
     },
     {
       area: "md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]",
       icon: <IconDeviceLaptop className="h-6 w-6 text-accent-blue" />,
-      title: "Responsive Design",
+      title: "Full Stack Web Development",
       description:
-        "Ensuring flawless experiences across all devices and screen sizes.",
+        "Developing complete web applications using HTML, CSS, JavaScript, React, and Node.js.",
     },
     {
       area: "md:[grid-area:3/1/4/7] xl:[grid-area:2/8/3/10]",
       icon: <IconRocket className="h-6 w-6 text-accent-blue" />,
-      title: "Performance",
-      description: "Optimizing for 60fps animations and sub-second load times.",
+      title: "Frontend & UI/UX",
+      description:
+        "Designinng interfaces.",
     },
     {
       area: "md:[grid-area:3/7/4/13] xl:[grid-area:2/10/3/13]",
-      icon: <IconApiApp className="h-6 w-6 text-accent-blue" />,
-      title: "API Integration",
+      icon: <IconGitBranch className="h-6 w-6 text-accent-blue" />,
+      title: "Development Tools",
       description:
-        "Seamless integration with REST APIs, GraphQL, and third-party services.",
+        "Using Git, npm, Postman, and the terminal.",
     },
   ];
 
   return (
     <section
       id="skills"
-      className="relative min-h-screen w-full py-32 md:py-48 bg-black"
+      className="relative min-h-screen w-full py-32 md:py-48 bg-black px-4 md:px-8 lg:px-10"
     >
       <div className="swiss-container relative z-10">
         {/* Section header */}
         <div className="mb-16 md:mb-24">
           <div>
-            <span className="font-nohemi text-xs font-medium uppercase tracking-[0.3em] text-white/40 block mb-4">
+            <span className="font-poppins text-xs font-medium uppercase tracking-[0.3em] text-white/40 block mb-4">
               Expertise
             </span>
-            <h2 className="font-harmond text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6">
-              Skills & Services
+            <h2 className="font-poppins text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6">
+              Skills & Expertise
             </h2>
-            <p className="font-nohemi text-lg text-white/50 max-w-xl">
+            <p className="font-poppins text-lg text-white/50 max-w-xl">
               A comprehensive skill set refined through years of building
               digital products for startups and enterprises alike.
             </p>

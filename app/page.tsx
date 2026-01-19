@@ -10,10 +10,10 @@ import { KineticMarquee } from "@/components/ui/kinetic-marquee";
 
 export default function Home() {
   const navItems = [
-    { name: "Work", link: "#work" },
-    { name: "About", link: "#about" },
-    { name: "Process", link: "#process" },
-    { name: "Skills", link: "#skills" },
+    { name: "About", link: "/#about" },
+    { name: "Experience", link: "/#process" },
+    { name: "Skills", link: "/#skills" },
+    { name: "Projects", link: "/#work" },
   ];
 
   return (
@@ -27,8 +27,8 @@ export default function Home() {
 
         {/* Kinetic Marquee - Breaking the grid */}
         <div className="relative -my-8 md:-my-12 z-0">
-          <KineticMarquee 
-            text="CREATIVE DEVELOPER — BASED IN PARIS — DESIGN — CODE — "
+          <KineticMarquee
+            text="CREATIVE DEVELOPER — BASED IN INDIA — DESIGN — CODE — "
             baseVelocity={0.5}
             skewFactor={0.8}
           />
@@ -37,23 +37,24 @@ export default function Home() {
         {/* About Section - The Pitch */}
         <AboutSection />
 
+        {/* Process Section - Timeline */}
+        <ProcessSection />
+
+        {/* Skills & Services - Bento Grid */}
+        <SkillsSection />
+
         {/* Selected Works - The Core */}
         <WorksSection />
 
         {/* Kinetic Marquee - Second instance */}
         <div className="relative -my-8 md:-my-12 z-0">
-          <KineticMarquee 
+          <KineticMarquee
             text="AVAILABLE FOR PROJECTS — LET'S COLLABORATE — "
             baseVelocity={-0.4}
             skewFactor={0.6}
           />
         </div>
 
-        {/* Process Section - Timeline */}
-        <ProcessSection />
-
-        {/* Skills & Services - Bento Grid */}
-        <SkillsSection />
       </CurtainRevealLayout>
     </>
   );

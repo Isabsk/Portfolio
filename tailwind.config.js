@@ -31,8 +31,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        harmond: ['var(--font-harmond)', 'serif'],
-        nohemi: ['var(--font-nohemi)', 'sans-serif'],
+        poppins: ['var(--font-poppins)', 'sans-serif'],
       },
       animation: {
         'spin-slow': 'spin 3s linear infinite',

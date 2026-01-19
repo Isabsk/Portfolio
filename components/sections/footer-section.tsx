@@ -71,7 +71,7 @@ const DottedGlowBackground = memo(function DottedGlowBackground({ className }: {
         raf = 0;
         return;
       }
-      
+
       const { width, height } = container.getBoundingClientRect();
       ctx.clearRect(0, 0, width, height);
       ctx.fillStyle = "#3b82f6";
@@ -113,38 +113,19 @@ const DottedGlowBackground = memo(function DottedGlowBackground({ className }: {
   );
 });
 
-// Simple CSS-based flipping email
-function FlippingEmail({ email }: { email: string }) {
-  const [isFlipped, setIsFlipped] = useState(false);
-
+// Simple direct email link
+function EmailLink({ email }: { email: string }) {
   return (
-    <div
-      className="relative inline-block cursor-pointer perspective-1000"
-      onMouseEnter={() => setIsFlipped(true)}
-      onMouseLeave={() => setIsFlipped(false)}
+    <a
+      href={`mailto:${email}`}
+      className="group relative inline-block cursor-pointer"
       data-cursor-hover
     >
-      <div
-        className="relative preserve-3d transition-transform duration-300"
-        style={{
-          transform: isFlipped ? "rotateX(180deg)" : "rotateX(0deg)",
-        }}
-      >
-        {/* Front */}
-        <div
-          className="font-nohemi text-lg md:text-xl text-white/60 hover:text-white transition-colors backface-hidden"
-        >
-          Email Me →
-        </div>
-        {/* Back */}
-        <div
-          className="absolute inset-0 font-nohemi text-lg md:text-xl text-white backface-hidden"
-          style={{ transform: "rotateX(180deg)" }}
-        >
-          {email}
-        </div>
-      </div>
-    </div>
+      <span className="font-poppins text-lg md:text-xl text-white/50 group-hover:text-white transition-all duration-300">
+        {email}
+      </span>
+      <div className="absolute -bottom-1 left-0 w-0 h-px bg-accent-blue group-hover:w-full transition-all duration-300" />
+    </a>
   );
 }
 
@@ -163,12 +144,12 @@ export function FooterSection() {
       <div className="swiss-container relative z-10 py-20 md:py-32">
         <div className="flex flex-col items-center justify-center text-center w-full">
           {/* Section label */}
-          <span className="font-nohemi text-xs font-medium uppercase tracking-[0.3em] text-white/40 mb-8">
+          <span className="font-poppins text-xs font-medium uppercase tracking-[0.3em] text-white/40 mb-8">
             Let&apos;s Connect
           </span>
 
           {/* Big CTA headline - Massive Harmond Typography */}
-          <h2 className="font-harmond text-[15vw] sm:text-[12vw] md:text-[10vw] lg:text-[12vw] font-bold tracking-tight text-white leading-[0.8] mb-8"
+          <h2 className="font-poppins text-[15vw] sm:text-[12vw] md:text-[10vw] lg:text-[12vw] font-bold tracking-tight text-white leading-[0.8] mb-8"
             style={{
               textShadow: "0 0 100px rgba(59,130,246,0.3), 0 0 200px rgba(139,92,246,0.2)",
             }}
@@ -179,7 +160,7 @@ export function FooterSection() {
           </h2>
 
           {/* Subtext */}
-          <p className="font-nohemi text-lg md:text-xl text-white/50 max-w-lg mb-12">
+          <p className="font-poppins text-lg md:text-xl text-white/50 max-w-lg mb-12">
             Have a project in mind? Let&apos;s create something extraordinary
             together.
           </p>
@@ -187,13 +168,13 @@ export function FooterSection() {
           {/* CTA Button with Magnetic Effect */}
           <MagneticButton
             as="a"
-            href="mailto:dev.sufyaan@gmail.com"
+            href="https://calendar.app.google/X4gfYY21ykGWAxri7"
             strength={0.4}
             className="group"
           >
             <span className={cn(
               "inline-flex items-center gap-3 px-8 py-4 rounded-full",
-              "bg-white text-black font-nohemi text-base font-semibold uppercase tracking-wide",
+              "bg-white text-black font-poppins text-base font-semibold uppercase tracking-wide",
               "transition-all duration-300",
               "group-hover:bg-accent-blue group-hover:text-white",
               "group-hover:shadow-[0_0_40px_rgba(59,130,246,0.5)]"
@@ -205,9 +186,9 @@ export function FooterSection() {
             </span>
           </MagneticButton>
 
-          {/* Email flip */}
+          {/* Email link */}
           <div className="mt-12">
-            <FlippingEmail email="dev.sufyaan@gmail.com" />
+            <EmailLink email="isab.s@zohocorp.com" />
           </div>
 
           {/* Social links with magnetic effect */}
@@ -219,7 +200,7 @@ export function FooterSection() {
                 href="#"
                 strength={0.5}
               >
-                <span className="font-nohemi text-xs uppercase tracking-widest text-white/40 hover:text-white transition-colors duration-200 px-2 py-1">
+                <span className="font-poppins text-xs uppercase tracking-widest text-white/40 hover:text-white transition-colors duration-200 px-2 py-1">
                   {social}
                 </span>
               </MagneticButton>
@@ -232,11 +213,11 @@ export function FooterSection() {
       <div className="relative z-10 w-full py-8 border-t border-white/10">
         <div className="swiss-container">
           <div className="flex flex-col items-center justify-center gap-2 text-center">
-            <p className="font-nohemi text-xs text-white/40">
-              © {new Date().getFullYear()} Sufyaan. All rights reserved.
+            <p className="font-poppins devtext-xs text-white/40">
+              © {new Date().getFullYear()} Isab Sk. All rights reserved.
             </p>
-            <p className="font-nohemi text-xs text-white/40">
-              GitHub: dev-sufyaan | Designed & Built with ♥ and lots of ☕
+            <p className="font-poppins text-xs text-white/40">
+              Designed & Built by <a href="https://github.com/dev-sufyaan" className="underline text-white">Mohammad Sufyaan</a>
             </p>
           </div>
         </div>
